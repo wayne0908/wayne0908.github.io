@@ -4,7 +4,98 @@
 
 layout: home
 ---
-description: his means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Welcome to Weizhi Li’s homepage! | Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</title>
+<meta name="generator" content="Jekyll v3.8.6" />
+<meta property="og:title" content="Welcome to Weizhi Li’s homepage!" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Thanks for visiting" />
+<meta property="og:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
+<link rel="canonical" href="http://localhost:4000/" />
+<meta property="og:url" content="http://localhost:4000/" />
+<meta property="og:site_name" content="Welcome to Weizhi Li’s homepage!" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/","headline":"Welcome to Weizhi Li’s homepage!","name":"Welcome to Weizhi Li’s homepage!","description":"Thanks for visiting!","@type":"WebSite","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Welcome to Weizhi Li's homepage!" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Welcome to Weizhi Li&#39;s homepage!</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+ <!--        <div class="trigger"><a class="page-link" href="/About/">About</a><a class="page-link" href="/Publication/">Publication</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/Resume/">Resume</a></div>
+      </nav></div> -->
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <!-- <img src="https://www.google.com/search?q=image&rlz=1C5CHFA_enUS650US650&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjy1LTU_O7jAhWWrZ4KHXPFDFQQ_AUIESgB&biw=1280&bih=648#imgrc=CJwabmfmxl2ySM:"> -->
+        <div class="home"><p>I am a second-year Ph.D. student at Arizona State University. My advisor is <a href=http://www.public.asu.edu/~visar/>Prof. Visar Berisha</a>. I finished my bachelor degree at Shandong University and my master degree at Texas A&M University. In the past, I have been fortunate to collaborate with <a href=http://faculty.sdu.edu.cn/wangchengyou/en/index/579986/list/index.htm>Prof. Chengyou Wang</a>, <a href=http://xqian37.github.io/>Prof. Xiaoning Qian</a>, and <a href=https://engineering.tamu.edu/electrical/profiles/jji.html>Prof. Jim Ji</a>. On the period of my bachelor study, I was interested in fundamental image processing such as filtering end up completing my <a href=>bachelor thesis</a> related to filterings on image dehazing. On the period of my master study, I mainly researched deep learning for histopathological image segmentation without ground-truth labels end up completing my <a href=>master thesis</a> related to noisy labels learning.  Now I am passionate in general machine learning such as regularization and inference.</p>
+    
+        <style>
+        p.small {
+        line-height: 0.7;
+        }
+
+        p.big {
+        line-height: 1.8;
+        }
+        </style>      
+        <p style="font-size:1.5em;"> Research Works </p>
+        <p><span style="font-weight:bold">W. Li</span>, G. Dasarathy, V. Berisha, “Regularization through Structural Label Smoothing”, submitted to NeurIPS 2019.</p>
+        <p>C. Tsai, <span style="font-weight:bold">W. Li</span>, X. Qian, Y. Lin, “Image Co-saliency Detection and Co-segmentation via Progressive Joint Optimization”, IEEE Transactions on Image Processing, 28(1), 56-71. <a href=>[PDF]</a></p>
+        <p><span style="font-weight:bold">W. Li,</span> "Adaptive Noise-Tolerant Network for Image Segmentation" (Project report). <a href=/Publications/ANTN.pdf>[PDF]</a> </p>
+        <p><span style="font-weight:bold">W. Li</span>, X. Qian, and J. Ji, “Noise-tolerant Deep Learning for Histopathological Image Segmentation”, In Proceedings of IEEE International Conference on Image Processing (ICIP), 2017. <a href=>[PDF]</a></p>
+        <p>L. Wang, X. Zhou, C. Wang, and <span style="font-weight:bold">W. Li</span> "The Effects of Image Dehazing Methods Using Dehazing Contrast-Enhancement Filters on Image Compression", KSII Transactions on Internet & Information Systems, 10(7). <a href=>[PDF]</a></p>
+        <p style="font-size:1.5em;"> Projects </p>
+        <p>Multi-View 3D Object Detection Network for
+Autonomous Driving. <a href=https://github.com/wayne0908/Multi-View-3D-Object-Detection-Network-for-Autonomous-Driving>[CODE]</a></p>
+  
+        <p style="font-size:1.5em;"> Awards </p>
+<p> Graduate Engineering Fellowship, 2018</p>
+<p>Winner of the research poster competition in SWE region C conference, 2017</p>
+<p>Graduate Merit Scholarship, 2016</p>
+<p>Shandong University 3rd-class Scholarship, 2014</p>
+</div>
+
+      </div>
+
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Welcome to Weizhi Li&#39;s homepage!</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name"><li><a class="u-email" href="mailto:weizhi0908@gmail.com">weizhi0908@gmail.com</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Thanks for visiting!</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+
+</html>
+
