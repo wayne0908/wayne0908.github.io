@@ -30,11 +30,6 @@ theme: minima
 plugins:
   - jekyll-feed
 
----
-layout: post
-title: Blogging Like a Hacker
----
-
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
