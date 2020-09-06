@@ -1,0 +1,130 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS 
+%----------------------------------------------------------------------------------------
+ 
+\documentclass{resume} % Use the custom resume.cls style 
+\usepackage{hyperref}
+\usepackage[left=0.4 in,top=0.3 in,right=0.4 in,bottom=0.3in]{geometry} % Document margins
+\usepackage{textcomp}
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{Weizhi Li} % Your name 
+\address{Lattie F. Coor Hall 3427 \\ Tempe, Arizona 85281} % Your address 
+%\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional) 
+\address{979 571 3612 \\ weizhi0908@gmail.com} % Your phone number and email
+\address{\url{https://wayne0908.github.io/}} 
+
+\begin{document}  
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+\vspace{-0.5cm}
+\begin{rSection}{Education}
+{\bf Doctor of Philosophy in Computer Engineering} \hfill {September 2018 - Present}
+\\
+Arizona State University, Tempe, AZ \hspace{0.1in}GPA: 4.0/4.33\\
+Advisor: Professor Visar Berisha\\
+Research interests: Model robustness and label-efficient learning \\ 
+{\bf Master of Science in Electrical Engineering} \hfill {September 2015 - December 2017}
+\\ 
+Texas A\&M University, College Station, TX \hspace{0.1in}GPA: 3.7/4.0
+\\
+Advisor: Professor Jim Ji\\
+Research interests: Deep learning in histological image segmentation\\
+% Concentrations in Computer Vision \& Machine Learning\\
+% \emph{60\%} of education financed through employment or scholarship   
+{\bf Bachelor of Science in Electronic Information Science and Technology} \hfill {September 2011 - June 2015}
+\\ 
+Shandong University, P.R. China \hspace{0.1in}Major GPA: 85/100\\ 
+Research interests:  Image processing in image dehazing and filtering 
+%Minor in Linguistics \smallskip \\
+%Member of Eta Kappa Nu \\
+%Member of Upsilon Pi Epsilon \\
+
+
+\end{rSection} 
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+\vspace{-0.1cm}
+\begin{rSection}{Technical skills}
+%\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }  
+I have been doing \textbf{experiment design} for research projects since the junior year of college.  Driven by the trend of deep learning research, I began using \textbf{Python} and \textbf{Tensorflow} during my master study, and changed to using \textbf{Pytorch} at the beginning of my Ph.D study.  For the majority time of recent years, I developed machine learning algorithms with \textbf{Python} and \textbf{Pytorch}. 
+
+%Familiar with \textbf{experiment design}; regularly use \textbf{Python} and \textbf{Pytorch}; and proven track records (\url{https://wayne0908.github.io/}) in \textbf{algorithm developments} for object detection, object classification and image segmentation.
+%Technical skills &Python, Pytorch, Tensorflow
+ 
+%\end{tabular}   
+
+\end{rSection}
+
+%-------------------------------------------------------------------------------
+%	PROJECTS
+\vspace{-0.1cm}
+\begin{rSection}{PROJECTS}
+\begin{rSubsection}{Finding the homology of decision boundaries with active learning} {January 2020 - Present}{Outcomes: One paper submitted to NeurIPS\textquotesingle20. \textbf{Python and Matlab are used.}}{}
+\item For the first time, we proposed to find the homology of decision boundaries with active learning. Furthermore, we analyzed the complexity of the proposed learning algorithm in the framework of the probably approximately correct learning.
+\end{rSubsection}  
+\vspace{-0.1cm}
+\begin{rSubsection}{Structural label smoothing for  deep model regularization} {September 2018 - December 2019}{Outcomes: One paper accepted to AISTATS\textquotesingle20 \href{http://proceedings.mlr.press/v108/li20e/li20e.pdf}{[Paper link]}. \textbf{Pytorch and Python are used.}}{}
+\item By acquiring the meta-knowledge from the data, we modified the original label smoothing and developed a novel structural label smoothing. This new regularization method, experimented in diversed classification tasks such as CIFAR-10, CIFAR-100 and SVHN, outperforms the original label smoothing by  2\% accuracy.
+
+\end{rSubsection}  
+%------------------------------------------------
+\begin{rSubsection}{Multi-view 3D object detection network for autonomous driving}{November 2017 - December 2017}{Outcomes: Reproduced the results of a CVPR\textquotesingle17 paper \href{https://github.com/wayne0908/Multi-View-3D-Object-Detection-Network-for-Autonomous-Driving}{[Project link]}. \textbf{Tensorflow and Python are used.}}{} 
+\item I processed the raw LIDAR point cloud and prepared it for the model training. I built aN object detection deep network called MV3D with Tensorflow. This is a deep network composed of two subnetworks to receive the LIDAR and RGB image data. \end{rSubsection}
+\vspace{-0.1cm}
+\begin{rSubsection}{Noise-tolerant deep Learning for image segmentation} {January 2016 - December 2017}{Outcomes: one paper accepted to ICIP\textquotesingle17 \href{https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8296848}{[Paper link]}. \textbf{Tensorflow and Python are used.}}{}
+\item We innovatively developed a deep network resistant to label-noise for histological image segmentation. The proposed network was applied to identify the Duchenne muscular dystrophy in histological images and achieved the clinicians satisfied segmentation results.
+\end{rSubsection}  
+\vspace{-0.1cm}
+%-------------------------------------------------
+
+\end{rSection} 
+
+%	PUBLICATIONS
+%----------------------------------------------------------------------------------------
+\vspace{-0.1cm}
+\begin{rSection}{PUBLICATIONS} \itemsep -3pt  
+ \textbf{W. Li}, G. Dasarathy, K. Ramamurthy, V. Berisha, ``\textit{Finding the Homology of Decision Boundaries with Active Learning}'',  submitted to NeurIPS\textquotesingle20\vspace{+5pt}\\
+ \textbf{W. Li}, G. Dasarathy, V. Berisha, ``\textit{Regularization via Structural Label Smoothing}'',  AISTATS\textquotesingle20\vspace{+5pt}\\
+C. Tsai, \textbf{W. Li}, X. Qian, Y. Lin, ``\textit{Image Co-saliency Detection and Co-segmentation via Progressive Joint Optimization}'', IEEE Transactions on Image Processing ({TIP}), 28(1), 56-71. \vspace{+5pt}\\
+\textbf{W. Li}, X. Qian, and J. Ji, ``\textit{Noise-tolerant Deep Learning for Histopathological Image Segmentation}", In Proceedings of IEEE International Conference on Image Processing ({ICIP}), 2017.\vspace{+5pt}
+\end{rSection}  
+
+%	HONORS
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{HONORS} \itemsep -3pt  
+Graduate Travel Award from Arizona State University \hfill 2020\\ 
+Engineering Graduate Fellowship from Arizona State University \hfill 2018, 2019\\ 
+Winner of the Research Poster Competition in SWE region C conference \hfill Mar 2017\\ 
+Graduate Merit Scholarship from Texas A\&M University\hfill Aug 2016\\ 
+Shandong University 3rd-class Scholarship \hfill Oct 2014
+\end{rSection}  
+
+\begin{rSection}{Activities} 
+Graduate Fulton Ambassadors \hfill  Jan 2020 - Present\\ 
+\end{rSection}  
+
+\end{document}
