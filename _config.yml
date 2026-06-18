@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Weizhi Li
-email: weizhi0908@gmail.com
+email:
 description: >- # this means to ignore newlines until "baseurl:"
   Weizhi Li develops reliable and efficient next-generation AI solutions for
   scientific applications, healthcare, and experimental design.
