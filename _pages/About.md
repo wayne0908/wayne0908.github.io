@@ -27,7 +27,7 @@ weizhi_content: true
 
       <ul class="papers selected-papers">
         <li>
-          <p><strong>Weizhi Li</strong>, Gautam Dasarathy, and Visar Berisha. "<a href="https://arxiv.org/abs/2509.10742">Matched-Pair Experimental Design with Active Learning</a>." UAI, 2026. <span class="pillar-tags"><span>Statistical validity</span><span>Intelligent data acquisition</span></span></p>
+          <p><strong>Weizhi Li</strong>, Gautam Dasarathy, and Visar Berisha. "<a href="https://arxiv.org/abs/2509.10742">Matched-Pair Experimental Design with Active Learning</a>." Conference on Uncertainty in Artificial Intelligence (UAI), 2026. <span class="pillar-tags"><span>Statistical validity</span><span>Intelligent data acquisition</span></span></p>
           <p class="paper-summary">Integrates machine learning with matched-pair experiments to detect causal treatment effects under limited resources. The proposed design uses agnostic active learning to prioritize treatment-responsive regions while identifying an enclosing region that provides an upper bound on the size of the responder region under the stated assumptions. This supports decisions in multiphase clinical trials: whether a treatment may benefit a sufficiently broad population to justify a larger, more expensive experiment.</p>
           <figure class="paper-visual paper-image paper-image-compact">
             <a href="/images/research/UAI2026.pdf" target="_blank" rel="noopener">
@@ -54,7 +54,7 @@ weizhi_content: true
         </li>
 
         <li>
-          <p>Pavel Dolin, <strong>Weizhi Li</strong>, Gautam Dasarathy, and Visar Berisha. "<a href="https://papers.nips.cc/paper_files/paper/2025/hash/a540928a972fea5b501b64c51f7829ef-Abstract-Position_Paper_Track.html">Statistically Valid Post-Deployment Monitoring Should Be Standard for AI-Based Digital Health</a>." NeurIPS, 2025. <span class="pillar-tags"><span>Statistical validity</span></span></p>
+          <p>Pavel Dolin, <strong>Weizhi Li</strong>, Gautam Dasarathy, and Visar Berisha. "<a href="https://papers.nips.cc/paper_files/paper/2025/hash/a540928a972fea5b501b64c51f7829ef-Abstract-Position_Paper_Track.html">Statistically Valid Post-Deployment Monitoring Should Be Standard for AI-Based Digital Health</a>." Conference on Neural Information Processing Systems (NeurIPS), 2025. <span class="pillar-tags"><span>Statistical validity</span></span></p>
           <p class="paper-summary">Healthcare operating conditions are dynamic: patient demographics, clinical practices, equipment, disease patterns, and data-acquisition procedures can shift. Yet a review cited in this paper found that only 9% of FDA-registered AI-based healthcare tools included a post-deployment surveillance plan. The paper argues for statistically valid, label-efficient post-deployment monitoring to detect shifts in data and model performance while controlling explicit error rates.</p>
           <figure class="paper-visual paper-image paper-image-monitoring">
             <a href="/images/research/NeuriPS_2025.pdf" target="_blank" rel="noopener">
@@ -64,7 +64,7 @@ weizhi_content: true
         </li>
 
         <li>
-          <p><strong>Weizhi Li</strong>, Visar Berisha, and Gautam Dasarathy. "<a href="/Publications/WSC24.pdf">Advanced Tutorial: Label-Efficient Two-Sample Tests</a>." WSC, 2024. <span class="pillar-tags"><span>Statistical validity</span><span>Intelligent data acquisition</span></span></p>
+          <p><strong>Weizhi Li</strong>, Visar Berisha, and Gautam Dasarathy. "<a href="/Publications/WSC24.pdf">Advanced Tutorial: Label-Efficient Two-Sample Tests</a>." Winter Simulation Conference (WSC), 2024. <span class="pillar-tags"><span>Statistical validity</span><span>Intelligent data acquisition</span></span></p>
           <p class="paper-summary">A tutorial on resource-efficient methods for revealing dependence on an exposure variable in industrial-scale simulation applications. Using the familiar machine-learning variables of features and labels, it presents statistical tools to detect whether labels depend on features before committing to large-scale computation, such as developing AI surrogate models for scientific simulations. These tools enable a pilot study to gauge whether data contain predictive signals and are ready for machine-learning modeling.</p>
           <figure class="paper-visual paper-image paper-image-compact paper-image-wsc">
             <a href="/images/research/WSC-2024.png" target="_blank" rel="noopener">
@@ -74,7 +74,7 @@ weizhi_content: true
         </li>
 
         <li id="tmlr-paper">
-          <p><strong>Weizhi Li</strong>, Prad Kadambi, Pouria Saidi, Karthikeyan Natesan Ramamurthy, Gautam Dasarathy, and Visar Berisha. "<a href="/Publications/TMLR2024.pdf">Active Sequential Two-Sample Testing</a>." TMLR, 2024. <span class="pillar-tags"><span>Statistical validity</span><span>Intelligent data acquisition</span></span></p>
+          <p><strong>Weizhi Li</strong>, Prad Kadambi, Pouria Saidi, Karthikeyan Natesan Ramamurthy, Gautam Dasarathy, and Visar Berisha. "<a href="/Publications/TMLR2024.pdf">Active Sequential Two-Sample Testing</a>." Transactions on Machine Learning Research (TMLR), 2024. <span class="pillar-tags"><span>Statistical validity</span><span>Intelligent data acquisition</span></span></p>
           <p class="paper-summary">Proposes a framework for detecting observational dependence between measured features and an exposure or group variable when labels are costly. The design combines machine learning with active, sequential two-sample testing to decide where to collect data and monitor the accumulated evidence. Anytime-valid inference guides the next step: continue collecting data, stop without rejecting when the budget is exhausted, or reject independence to establish evidence of observational dependence.</p>
           <figure class="paper-visual paper-image paper-image-compact">
             <a href="/images/research/TMLR.pdf" target="_blank" rel="noopener">
@@ -84,7 +84,7 @@ weizhi_content: true
         </li>
 
         <li>
-          <p><strong>Weizhi Li</strong>, Gautam Dasarathy, Karthikeyan Natesan Ramamurthy, and Visar Berisha. "<a href="/Publications/UAI22.pdf">A Label-Efficient Two-Sample Test</a>." UAI, 2022. <span class="pillar-tags"><span>Statistical validity</span><span>Intelligent data acquisition</span></span></p>
+          <p><strong>Weizhi Li</strong>, Gautam Dasarathy, Karthikeyan Natesan Ramamurthy, and Visar Berisha. "<a href="/Publications/UAI22.pdf">A Label-Efficient Two-Sample Test</a>." Conference on Uncertainty in Artificial Intelligence (UAI), 2022. <span class="pillar-tags"><span>Statistical validity</span><span>Intelligent data acquisition</span></span></p>
           <p class="paper-summary">Introduces bimodal querying, which reverses the uncertainty-seeking principle of conventional active learning: in binary classification, it requests annotations where the model is most confident in class 0 or class 1. Combined with a two-sample test, this exposes predictive signals with fewer labels. <a href="#tmlr-paper">Subsequent analysis</a> establishes asymptotic maximization of feature-label mutual information under consistency conditions. The approach supports rapid signal assessment, including evaluating whether data contain useful predictive information for an AI task.</p>
           <figure class="paper-visual paper-image paper-image-compact">
             <a href="/images/research/UAI2022.pdf" target="_blank" rel="noopener">
@@ -94,7 +94,7 @@ weizhi_content: true
         </li>
 
         <li>
-          <p><strong>Weizhi Li</strong>, Gautam Dasarathy, Karthikeyan Natesan Ramamurthy, and Visar Berisha. "<a href="/Publications/NeurIPS2020.pdf">Finding the Homology of Decision Boundaries with Active Learning</a>." NeurIPS, 2020. <span class="pillar-tags"><span>Adaptive learning</span><span>Intelligent data acquisition</span></span></p>
+          <p><strong>Weizhi Li</strong>, Gautam Dasarathy, Karthikeyan Natesan Ramamurthy, and Visar Berisha. "<a href="/Publications/NeurIPS2020.pdf">Finding the Homology of Decision Boundaries with Active Learning</a>." Conference on Neural Information Processing Systems (NeurIPS), 2020. <span class="pillar-tags"><span>Adaptive learning</span><span>Intelligent data acquisition</span></span></p>
           <p class="paper-summary">Proposes an active-learning framework to efficiently estimate the topological properties of a decision-boundary manifold. These properties support evaluating AI tools from a model marketplace using a topology-based comparison metric. The work establishes conditions under which boundary homology is recoverable, grounding the metric's reliability and the selection of models for downstream tasks. The left diagram illustrates the boundary geometry and sampling conditions; the right shows the active homology-estimation pipeline.</p>
           <div class="paper-figure-pair paper-figure-pair-topology">
             <figure class="paper-visual paper-image">
@@ -111,7 +111,7 @@ weizhi_content: true
         </li>
 
         <li id="aistats-paper">
-          <p><strong>Weizhi Li</strong>, Gautam Dasarathy, and Visar Berisha. "<a href="/Publications/AISTATS2020.pdf">Regularization via Structural Label Smoothing</a>." AISTATS, 2020. <span class="pillar-tags"><span>Adaptive learning</span></span></p>
+          <p><strong>Weizhi Li</strong>, Gautam Dasarathy, and Visar Berisha. "<a href="/Publications/AISTATS2020.pdf">Regularization via Structural Label Smoothing</a>." International Conference on Artificial Intelligence and Statistics (AISTATS), 2020. <span class="pillar-tags"><span>Adaptive learning</span></span></p>
           <p class="paper-summary">Characterizes intrinsic structural complexity through local class overlap and develops structural label smoothing to adapt neural-network training to that complexity. By choosing smoothing strengths from the data's structure rather than imposing uniform regularization, the method adapts a general-purpose learning algorithm to a downstream task using its intrinsic structural properties. The figure traces the process from the original data through local complexity estimates to adaptive smoothing strengths.</p>
           <figure class="paper-visual paper-image">
             <a href="/images/research/AISTATS20.pdf" target="_blank" rel="noopener">
