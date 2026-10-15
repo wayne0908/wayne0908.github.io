@@ -14,10 +14,10 @@ weizhi_content: true
       <h2 id="research-summary-heading">Research Summary</h2>
       <p>My research develops AI integration designs that enable models to operate reliably, robustly, and data-efficiently in high-stakes scientific and healthcare settings. I focus on the layer between AI capability and deployment: how to validate, monitor, adapt, and supply AI systems with informative data when real-world decisions are consequential and operational resources are limited. This agenda is organized around three pillars. <strong>Statistical validity</strong> provides explicit error-rate control for AI-assisted decisions. <strong>Adaptive learning</strong> characterizes and exploits heterogeneity in operating conditions to support robust prediction across diverse and dynamic environments. <strong>Intelligent data acquisition</strong> guides the allocation of limited data-collection resources, including experimental measurements and data annotations. Together, these pillars enable the reliable, robust, and data-efficient integration of AI into high-stakes decision systems.</p>
       <figure class="agenda-figure">
-        <a class="agenda-pdf" href="/images/research/ai-integration-design.pdf" target="_blank" rel="noopener" aria-label="Open the original AI Integration Design PDF">
+        <div class="agenda-pdf" data-pdf-src="/images/research/ai-integration-design.pdf">
           <canvas hidden role="img" aria-label="AI Integration Design connects AI technologies with high-stakes operating environments through statistical validity, adaptive learning, and intelligent data acquisition."></canvas>
-          <span class="pdf-status">AI Integration Design (PDF)</span>
-        </a>
+          <img class="agenda-fallback" src="/images/research/ai-integration-design.svg" width="2520" height="774" alt="AI Integration Design connects AI technologies with high-stakes operating environments through statistical validity, adaptive learning, and intelligent data acquisition.">
+        </div>
       </figure>
       <script type="module" src="/assets/js/research-diagram.js"></script>
     </section>
@@ -30,9 +30,7 @@ weizhi_content: true
           <p><strong>Weizhi Li</strong>, Gautam Dasarathy, and Visar Berisha. "<a href="https://arxiv.org/abs/2509.10742">Matched-Pair Experimental Design with Active Learning</a>." Conference on Uncertainty in Artificial Intelligence (UAI), 2026. <span class="pillar-tags"><span>Statistical validity</span><span>Intelligent data acquisition</span></span></p>
           <p class="paper-summary">Integrates machine learning with matched-pair experiments to detect causal treatment effects under limited resources. The proposed design uses agnostic active learning to prioritize treatment-responsive regions while identifying an enclosing region that provides an upper bound on the size of the responder region under the stated assumptions. This supports decisions in multiphase clinical trials: whether a treatment may benefit a sufficiently broad population to justify a larger, more expensive experiment.</p>
           <figure class="paper-visual paper-image paper-image-compact">
-            <a href="/images/research/UAI2026.pdf" target="_blank" rel="noopener">
-              <img src="/images/research/uai-2026.png" width="1884" height="656" loading="lazy" alt="Comparison of random enrollment, enrollment within a subset of the target, and active enrollment covering the high-treatment-effect region.">
-            </a>
+            <img src="/images/research/uai-2026.png" width="1884" height="656" loading="lazy" alt="Comparison of random enrollment, enrollment within a subset of the target, and active enrollment covering the high-treatment-effect region.">
           </figure>
         </li>
 
@@ -41,14 +39,10 @@ weizhi_content: true
           <p class="paper-summary">Develops a neural-network training approach for stable spectroscopic characterization of oxide weights under extreme simulated Martian conditions. The approach embeds comparisons between multi-oxide predictions and certified reference weights in an f-divergence loss, guiding the network to learn the underlying multi-oxide distributions. The left diagram shows how f-divergence regularization complements the prediction-error loss during training; the right illustrates large versus small divergence between predicted and reference oxide-weight distributions.</p>
           <div class="paper-figure-pair paper-figure-pair-jgr">
             <figure class="paper-visual paper-image">
-              <a href="/images/research/JGR_framework.pdf" target="_blank" rel="noopener">
-                <img src="/images/research/jgr-framework-native.png" width="1669" height="404" loading="lazy" alt="Spectroscopic neural network with mean squared error and f-divergence regularization.">
-              </a>
+              <img src="/images/research/jgr-framework-native.png" width="1669" height="404" loading="lazy" alt="Spectroscopic neural network with mean squared error and f-divergence regularization.">
             </figure>
             <figure class="paper-visual paper-image">
-              <a href="/images/research/JGR_divergnce.pdf" target="_blank" rel="noopener">
-                <img src="/images/research/jgr-divergence.png" width="592" height="223" loading="lazy" alt="Graph illustrations contrasting large and small divergence between two distributions.">
-              </a>
+              <img src="/images/research/jgr-divergence.png" width="592" height="223" loading="lazy" alt="Graph illustrations contrasting large and small divergence between two distributions.">
             </figure>
           </div>
         </li>
@@ -57,9 +51,7 @@ weizhi_content: true
           <p>Pavel Dolin, <strong>Weizhi Li</strong>, Gautam Dasarathy, and Visar Berisha. "<a href="https://papers.nips.cc/paper_files/paper/2025/hash/a540928a972fea5b501b64c51f7829ef-Abstract-Position_Paper_Track.html">Statistically Valid Post-Deployment Monitoring Should Be Standard for AI-Based Digital Health</a>." Conference on Neural Information Processing Systems (NeurIPS), 2025. <span class="pillar-tags"><span>Statistical validity</span></span></p>
           <p class="paper-summary">Healthcare operating conditions are dynamic: patient demographics, clinical practices, equipment, disease patterns, and data-acquisition procedures can shift. Yet a review cited in this paper found that only 9% of FDA-registered AI-based healthcare tools included a post-deployment surveillance plan. The paper argues for statistically valid, label-efficient post-deployment monitoring to detect shifts in data and model performance while controlling explicit error rates.</p>
           <figure class="paper-visual paper-image paper-image-monitoring">
-            <a href="/images/research/NeuriPS_2025.pdf" target="_blank" rel="noopener">
-              <img src="/images/research/neurips-2025-monitoring.png" width="1145" height="539" loading="lazy" alt="Digital-health monitoring framework covering data shifts, model performance, and impacted subgroups.">
-            </a>
+            <img src="/images/research/neurips-2025-monitoring.png" width="1145" height="539" loading="lazy" alt="Digital-health monitoring framework covering data shifts, model performance, and impacted subgroups.">
           </figure>
         </li>
 
@@ -67,9 +59,7 @@ weizhi_content: true
           <p><strong>Weizhi Li</strong>, Visar Berisha, and Gautam Dasarathy. "<a href="/Publications/WSC24.pdf">Advanced Tutorial: Label-Efficient Two-Sample Tests</a>." Winter Simulation Conference (WSC), 2024. <span class="pillar-tags"><span>Statistical validity</span><span>Intelligent data acquisition</span></span></p>
           <p class="paper-summary">A tutorial on resource-efficient methods for revealing dependence on an exposure variable in industrial-scale simulation applications. Using the familiar machine-learning variables of features and labels, it presents statistical tools to detect whether labels depend on features before committing to large-scale computation, such as developing AI surrogate models for scientific simulations. These tools enable a pilot study to gauge whether data contain predictive signals and are ready for machine-learning modeling.</p>
           <figure class="paper-visual paper-image paper-image-compact paper-image-wsc">
-            <a href="/images/research/WSC-2024.png" target="_blank" rel="noopener">
-              <img src="/images/research/WSC-2024.png" width="936" height="396" loading="lazy" alt="A pilot study paired with a neural-network model, illustrating the assessment of data before larger-scale machine-learning modeling.">
-            </a>
+            <img src="/images/research/WSC-2024.png" width="936" height="396" loading="lazy" alt="A pilot study paired with a neural-network model, illustrating the assessment of data before larger-scale machine-learning modeling.">
           </figure>
         </li>
 
@@ -77,9 +67,7 @@ weizhi_content: true
           <p><strong>Weizhi Li</strong>, Prad Kadambi, Pouria Saidi, Karthikeyan Natesan Ramamurthy, Gautam Dasarathy, and Visar Berisha. "<a href="/Publications/TMLR2024.pdf">Active Sequential Two-Sample Testing</a>." Transactions on Machine Learning Research (TMLR), 2024. <span class="pillar-tags"><span>Statistical validity</span><span>Intelligent data acquisition</span></span></p>
           <p class="paper-summary">Proposes a framework for detecting observational dependence between measured features and an exposure or group variable when labels are costly. The design combines machine learning with active, sequential two-sample testing to decide where to collect data and monitor the accumulated evidence. Anytime-valid inference guides the next step: continue collecting data, stop without rejecting when the budget is exhausted, or reject independence to establish evidence of observational dependence.</p>
           <figure class="paper-visual paper-image paper-image-compact">
-            <a href="/images/research/TMLR.pdf" target="_blank" rel="noopener">
-              <img src="/images/research/tmlr-active-sequential.png" width="1853" height="695" loading="lazy" alt="Active sequential two-sample testing loop: predict, query labels, update the statistic, then reject or continue according to the threshold and budget.">
-            </a>
+            <img src="/images/research/tmlr-active-sequential.png" width="1853" height="695" loading="lazy" alt="Active sequential two-sample testing loop: predict, query labels, update the statistic, then reject or continue according to the threshold and budget.">
           </figure>
         </li>
 
@@ -87,9 +75,7 @@ weizhi_content: true
           <p><strong>Weizhi Li</strong>, Gautam Dasarathy, Karthikeyan Natesan Ramamurthy, and Visar Berisha. "<a href="/Publications/UAI22.pdf">A Label-Efficient Two-Sample Test</a>." Conference on Uncertainty in Artificial Intelligence (UAI), 2022. <span class="pillar-tags"><span>Statistical validity</span><span>Intelligent data acquisition</span></span></p>
           <p class="paper-summary">Introduces bimodal querying, which reverses the uncertainty-seeking principle of conventional active learning: in binary classification, it requests annotations where the model is most confident in class 0 or class 1. Combined with a two-sample test, this exposes predictive signals with fewer labels. <a href="#tmlr-paper">Subsequent analysis</a> establishes asymptotic maximization of feature-label mutual information under consistency conditions. The approach supports rapid signal assessment, including evaluating whether data contain useful predictive information for an AI task.</p>
           <figure class="paper-visual paper-image paper-image-compact">
-            <a href="/images/research/UAI2022.pdf" target="_blank" rel="noopener">
-              <img src="/images/research/uai-2022.png" width="2339" height="942" loading="lazy" alt="Original data distribution compared with passive querying and bimodal querying that amplifies distributional separation.">
-            </a>
+            <img src="/images/research/uai-2022.png" width="2339" height="942" loading="lazy" alt="Original data distribution compared with passive querying and bimodal querying that amplifies distributional separation.">
           </figure>
         </li>
 
@@ -98,14 +84,10 @@ weizhi_content: true
           <p class="paper-summary">Proposes an active-learning framework to efficiently estimate the topological properties of a decision-boundary manifold. These properties support evaluating AI tools from a model marketplace using a topology-based comparison metric. The work establishes conditions under which boundary homology is recoverable, grounding the metric's reliability and the selection of models for downstream tasks. The left diagram illustrates the boundary geometry and sampling conditions; the right shows the active homology-estimation pipeline.</p>
           <div class="paper-figure-pair paper-figure-pair-topology">
             <figure class="paper-visual paper-image">
-              <a href="/images/research/NeurIPS2020_framework.png" target="_blank" rel="noopener">
-                <img src="/images/research/NeurIPS2020_framework.png" width="1806" height="1172" loading="lazy" alt="Labeled samples, decision-boundary geometry, and tubular neighborhoods used to recover boundary homology.">
-              </a>
+              <img src="/images/research/NeurIPS2020_framework.png" width="1806" height="1172" loading="lazy" alt="Labeled samples, decision-boundary geometry, and tubular neighborhoods used to recover boundary homology.">
             </figure>
             <figure class="paper-visual paper-image">
-              <a href="/images/research/NeurIPS2020_topology_visualization.pdf" target="_blank" rel="noopener">
-                <img src="/images/research/neurips-2020-topology.png" width="1012" height="106" loading="lazy" alt="Active-learning pipeline from graph construction and queried labels to simplicial complexes and persistence diagrams.">
-              </a>
+              <img src="/images/research/neurips-2020-topology.png" width="1012" height="106" loading="lazy" alt="Active-learning pipeline from graph construction and queried labels to simplicial complexes and persistence diagrams.">
             </figure>
           </div>
         </li>
@@ -114,9 +96,7 @@ weizhi_content: true
           <p><strong>Weizhi Li</strong>, Gautam Dasarathy, and Visar Berisha. "<a href="/Publications/AISTATS2020.pdf">Regularization via Structural Label Smoothing</a>." International Conference on Artificial Intelligence and Statistics (AISTATS), 2020. <span class="pillar-tags"><span>Adaptive learning</span></span></p>
           <p class="paper-summary">Characterizes intrinsic structural complexity through local class overlap and develops structural label smoothing to adapt neural-network training to that complexity. By choosing smoothing strengths from the data's structure rather than imposing uniform regularization, the method adapts a general-purpose learning algorithm to a downstream task using its intrinsic structural properties. The figure traces the process from the original data through local complexity estimates to adaptive smoothing strengths.</p>
           <figure class="paper-visual paper-image">
-            <a href="/images/research/AISTATS20.pdf" target="_blank" rel="noopener">
-              <img src="/images/research/aistats-2020.png" width="2670" height="495" loading="lazy" alt="Structural label smoothing: (a) original training data, (b) cluster training data, (c) estimate local Bayes error, and (d) infer smoothing strengths.">
-            </a>
+            <img src="/images/research/aistats-2020.png" width="2670" height="495" loading="lazy" alt="Structural label smoothing: (a) original training data, (b) cluster training data, (c) estimate local Bayes error, and (d) infer smoothing strengths.">
             <figcaption class="aistats-steps">
               <span><strong>(a)</strong> Original training data</span>
               <span><strong>(b)</strong> Cluster training data</span>
