@@ -1,15 +1,14 @@
 ---
 permalink: /
-title: "AI Integration Design"
+title: "About Me"
 layout: single
 author_profile: true
 weizhi_content: true
 ---
 
 {::nomarkdown}
-<p>AI integration design for reliable, robust, and data-efficient AI operation in high-stakes settings.</p>
-
-<section class="intro" aria-label="Research agenda">
+<section class="intro" aria-label="About and research">
+      <p>I am currently a researcher at the University of Tennessee Health Science Center. I develop reliable, robust, and data-efficient AI for applications in science and healthcare. I earned my Ph.D. in computer engineering from Arizona State University, my M.S. in electrical engineering from Texas A&amp;M University, and my B.S. in electronic information science and technology from Shandong University. I previously held full-time research positions at Meta, Arizona State University, and Los Alamos National Laboratory.</p>
       <p><strong>Research interests:</strong> reliable and robust machine learning; statistical inference; active learning and experimental design; AI for science and healthcare.</p>
       <p class="opportunity"><strong>I am seeking opportunities as an Assistant Professor, Research Scientist, or Machine Learning Engineer. Please do not hesitate to contact me if you think I am a good fit!</strong></p>
       <h2 id="research-summary-heading">Research Summary</h2>
