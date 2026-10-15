@@ -7,44 +7,70 @@ const canvas = link.querySelector('canvas');
 const status = link.querySelector('.pdf-status');
 
 try {
-  const document = await getDocument({
+  const pdf = await getDocument({
     url: link.href,
     standardFontDataUrl: new URL('../vendor/pdfjs/standard_fonts/', import.meta.url).href,
   }).promise;
-  const page = await document.getPage(1);
+  const page = await pdf.getPage(1);
   const original = page.getViewport({ scale: 1 });
   let revision = 0;
   let timer;
+  let renderTask;
+  let renderedSize;
 
   async function render() {
-    const current = ++revision;
     const width = link.getBoundingClientRect().width;
     if (!width) return;
 
-    // Render the original PDF at HiDPI resolution, including after resizing.
-    const density = Math.max(3, window.devicePixelRatio || 1);
-    const viewport = page.getViewport({ scale: width * density / original.width });
-    const surface = window.document.createElement('canvas');
-    surface.width = Math.ceil(viewport.width);
-    surface.height = Math.ceil(viewport.height);
-
-    try {
-      await page.render({ canvasContext: surface.getContext('2d'), viewport }).promise;
+    const density = window.devicePixelRatio || 1;
+    const size = `${width}:${density}`;
+    if (!renderTask && size === renderedSize) return;
+    const current = ++revision;
+    if (renderTask) {
+      renderTask.cancel();
+      try {
+        await renderTask.promise;
+      } catch (error) {
+        if (error.name !== 'RenderingCancelledException') console.error(error);
+      }
       if (current !== revision) return;
-      canvas.width = surface.width;
-      canvas.height = surface.height;
-      canvas.getContext('2d').drawImage(surface, 0, 0);
+    }
+
+    // Match device pixels directly; avoid shrinking an oversampled text bitmap.
+    const viewport = page.getViewport({ scale: width / original.width });
+    canvas.width = Math.round(viewport.width * density);
+    canvas.height = Math.round(viewport.height * density);
+    const context = canvas.getContext('2d', { alpha: false });
+    const task = page.render({
+      canvasContext: context,
+      viewport,
+      transform: density === 1 ? null : [density, 0, 0, density, 0, 0],
+      background: '#ffffff',
+    });
+    renderTask = task;
+    try {
+      await task.promise;
+      if (current !== revision) return;
       canvas.hidden = false;
       status.hidden = true;
+      renderedSize = size;
     } catch (error) {
-      console.error('Unable to render research diagram:', error);
+      if (error.name !== 'RenderingCancelledException') {
+        canvas.hidden = true;
+        status.hidden = false;
+        console.error('Unable to render research diagram:', error);
+      }
+    } finally {
+      if (renderTask === task) renderTask = null;
     }
   }
 
-  new ResizeObserver(() => {
+  function scheduleRender() {
     clearTimeout(timer);
     timer = setTimeout(render, 100);
-  }).observe(link);
+  }
+  new ResizeObserver(scheduleRender).observe(link);
+  window.addEventListener('resize', scheduleRender);
 } catch (error) {
   console.error('Unable to load research diagram PDF:', error);
 }

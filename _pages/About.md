@@ -39,11 +39,11 @@ weizhi_content: true
 
         <li>
           <p><strong>Weizhi Li</strong>, Natalie Klein, Brendan Gifford, Elizabeth Sklute, Carey Legett, and Samuel Clegg. "<a href="https://doi.org/10.1029/2025JH000990">Regularization via f-Divergence: An Application to Multi-Oxide Spectroscopic Analysis</a>." JGR: Machine Learning and Computation, 2026. <span class="pillar-tags"><span>Adaptive learning</span></span></p>
-          <p class="paper-summary">Develops a neural-network training approach for stable spectroscopic characterization of oxide weights under extreme simulated Martian conditions. The approach embeds comparisons between multi-oxide predictions and certified reference weights in an f-divergence loss, guiding the network to learn the underlying multi-oxide distributions. The left diagram shows how this loss complements prediction error during training; the right illustrates large versus small distributional divergence.</p>
+          <p class="paper-summary">Develops a neural-network training approach for stable spectroscopic characterization of oxide weights under extreme simulated Martian conditions. The approach embeds comparisons between multi-oxide predictions and certified reference weights in an f-divergence loss, guiding the network to learn the underlying multi-oxide distributions. The left diagram shows how f-divergence regularization complements the prediction-error loss during training; the right illustrates large versus small divergence between predicted and reference oxide-weight distributions.</p>
           <div class="paper-figure-pair paper-figure-pair-jgr">
             <figure class="paper-visual paper-image">
               <a href="/images/research/JGR_framework.pdf" target="_blank" rel="noopener">
-                <img src="/images/research/jgr-framework.png" width="1012" height="245" loading="lazy" alt="Spectroscopic neural network with mean squared error and f-divergence regularization.">
+                <img src="/images/research/jgr-framework-native.png" width="1669" height="404" loading="lazy" alt="Spectroscopic neural network with mean squared error and f-divergence regularization.">
               </a>
             </figure>
             <figure class="paper-visual paper-image">
