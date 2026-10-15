@@ -1,0 +1,11 @@
+main:
+  - title: "Research"
+    url: /#research-summary-heading
+  - title: "Publications"
+    url: /#publications-heading
+  - title: "Honors and Awards"
+    url: /#awards-heading
+  - title: "Talks"
+    url: /#talks-heading
+  - title: "Professional Activities"
+    url: /#activities-heading

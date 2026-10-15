@@ -1,3 +1,10 @@
 _site
 .sass-cache
 .jekyll-metadata
+.jekyll-cache/
+.bundle/
+/vendor/
+.DS_Store
+/academic-pages.html
+/assets/academic-pages.css
+/assets/academic-pages.js

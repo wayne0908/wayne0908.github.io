@@ -1,0 +1,4 @@
+assets/vendor/** linguist-vendored -whitespace
+assets/fonts/** linguist-vendored -whitespace
+assets/webfonts/** linguist-vendored -whitespace
+_sass/vendor/** linguist-vendored -whitespace

@@ -1,0 +1,123 @@
+.author__avatar img {
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center 60%;
+}
+
+.author__urls .author__employer { white-space: normal; }
+.author__urls-wrapper > .btn { color: var(--global-text-color) !important; }
+.author__urls-wrapper > .btn:hover { background-color: var(--global-bg-color); }
+.page__footer { position: relative; bottom: auto; }
+
+.page__content {
+  --global-link-color: #1b6a80;
+  --global-link-color-hover: #124c5c;
+  --global-link-color-visited: #1b6a80;
+}
+html[data-theme="dark"] .page__content {
+  --global-link-color: #90d5e7;
+  --global-link-color-hover: #b9e7f2;
+  --global-link-color-visited: #90d5e7;
+}
+html[data-theme="dark"] .opportunity { background: #3d3d3d; }
+
+.page__content h2 { scroll-margin-top: 90px; }
+#tmlr-paper { scroll-margin-top: 90px; }
+#aistats-paper { scroll-margin-top: 90px; }
+.intro p,
+.selected-papers p,
+.professional-activities li { text-align: justify; text-justify: inter-word; }
+.intro .opportunity {
+  padding: 0.8em 1em;
+  border-left: 3px solid var(--global-link-color);
+  background: var(--global-code-background-color);
+  text-align: left;
+}
+.agenda-figure { max-width: 720px; margin: 1.5em auto; }
+.agenda-pdf { display: block; width: 100%; aspect-ratio: 2520 / 774; border: 0; }
+.agenda-pdf canvas { width: 100%; height: 100%; }
+.paper-image img { display: block; width: 100%; height: auto; margin: 0; }
+.selected-papers { list-style: none; margin: 0; padding: 0; }
+.selected-papers > li { margin-bottom: 2em; padding: 0; }
+.page__content .selected-papers > li > p:first-child {
+  margin-bottom: 0.65em;
+  text-align: left;
+}
+.selected-papers > li > p:first-child > a { font-weight: 700; }
+.page__content .paper-summary {
+  padding-left: 12px;
+  border-left: 2px solid var(--global-border-color);
+  font-size: 1em;
+  font-weight: 400;
+}
+.pillar-tags { display: inline; margin-left: 0; text-align: left; }
+.pillar-tags span {
+  display: inline-block;
+  margin: 2px 3px 2px 4px;
+  padding: 1px 6px;
+  border: 1px solid var(--global-border-color);
+  color: var(--global-link-color);
+  font-size: 12px;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+.paper-image { max-width: 100%; margin: 1em 0; }
+.paper-image a { display: block; }
+.paper-image-monitoring { max-width: 720px; margin: 1em auto; }
+.paper-image-compact { max-width: 660px; margin: 1em auto; }
+.paper-image-wsc { max-width: 560px; }
+.aistats-steps {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 4px;
+  padding-right: 6%;
+  color: var(--global-text-color);
+  font-family: inherit;
+  font-size: 13px;
+  font-style: normal;
+  line-height: 1.4;
+  text-align: center;
+}
+.paper-figure-pair {
+  display: grid;
+  align-items: center;
+  gap: 18px;
+  margin: 1em 0;
+}
+.paper-figure-pair-jgr { grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr); }
+.paper-figure-pair-topology { grid-template-columns: minmax(0, 0.9fr) minmax(0, 2fr); }
+.paper-figure-pair .paper-image { min-width: 0; margin: 0; }
+.talks-list,
+.awards-list { list-style: none; margin: 0; padding: 0; }
+.talks-list li,
+.awards-list li {
+  display: grid;
+  align-items: baseline;
+  grid-template-columns: 60px minmax(0, 1fr);
+  gap: 18px;
+  padding: 0.8em 0;
+  border-bottom: 1px solid var(--global-border-color);
+}
+.awards-list li { grid-template-columns: 120px minmax(0, 1fr); }
+.talks-list li:last-child,
+.awards-list li:last-child { border-bottom: 0; }
+.award-date,
+.talk-year { font-size: 0.85em; font-variant-numeric: tabular-nums; }
+.award-date { white-space: nowrap; }
+.award-title,
+.talk-title { font-weight: 700; }
+.page__content .talk-title { margin: 0 0 0.15em; }
+.page__content .talk-details { margin: 0; font-size: 0.9em; }
+.talk-type { color: var(--global-link-color); }
+
+@media (max-width: 600px) {
+  .intro p,
+  .paper-summary,
+  .professional-activities li { hyphens: auto; }
+  .aistats-steps { column-gap: 4px; }
+  .paper-figure-pair { grid-template-columns: minmax(0, 1fr); gap: 14px; }
+  .awards-list li { grid-template-columns: 90px minmax(0, 1fr); gap: 12px; }
+  .talks-list li { grid-template-columns: 45px minmax(0, 1fr); gap: 12px; }
+  .award-date { font-size: 0.75em; }
+}
