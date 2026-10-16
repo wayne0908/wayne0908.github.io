@@ -5,6 +5,7 @@
 }
 
 .sidebar .author-profile { font-size: 1.1em; }
+.sidebar .author__bio { font-size: 0.85em; }
 .author__urls .author__employer { white-space: normal; }
 .author__urls-wrapper > .btn { color: var(--global-text-color) !important; }
 .author__urls-wrapper > .btn:hover { background-color: var(--global-bg-color); }
